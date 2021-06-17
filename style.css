@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  margin: 50px 0;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--font);
+}
+
+header {
+  font-size: 2.5rem;
+  padding-bottom: 50px;
+  border-bottom: 1px solid black;
+  width: 80vw;
+  max-width: 800px;
+  text-align: center;
+  /* font-weight: 400; */
+}
+
+main {
+  width: 80vw;
+  max-width: 800px;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.input {
+  justify-content: center;
+}
+
+.input input {
+  flex: 1;
+  font-size: larger;
+  font-family: var(--font);
+  outline: none;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  /* color: rgb(0, 0, 0); */
+  /* background-color: #bdbdbd; */
+  border: 1px solid black;
+  width: auto;
+  padding: 8px 0px 8px 15px;
+  margin: 10px 0px 10px 0;
+}
+
+.input button {
+  cursor: pointer;
+  align-self: center;
+  font-size: larger;
+  font-family: var(--font);
+  background-color: white;
+  border: 1px solid black;
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  padding: 8px 15px;
+  outline: none;
+  margin: 10px 0px 10px 0px;
+}
+
+.input button:hover {
+  background-color: black;
+  color: white;
+}
+
+.output {
+  flex-direction: column;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 8px;
+  margin-bottom: 20px;
+  background-color: #f1b2b2;
+  border-radius: 10px;
+}
+
+.todo p {
+  flex: 1;
+  background-color: white;
+  margin-right: 15px;
+  padding: 5px 10px;
+  border-radius: 5px 0 0 5px;
+  text-align: justify;
+}
+
+.todo input {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+
+.done {
+  background-color: #82d182;
+}
+
+.empty {
+  font-size: 6rem;
+  text-align: center;
+  color: #00000018;
+  user-select: none;
+}
